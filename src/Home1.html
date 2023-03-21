@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale=1.0">
+    <title>MyPortfolio - Home</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+    <section class="header">
+        <nav class="header-nav">
+            <i class="fa fa-sort-alpha-desc" aria-hidden="true"></i>
+
+            <h1 class="Title">&nbsp&nbsp Portfolio</h1>
+            <div class="header-bar" id="sideBar">
+                <i class="fa fa-times" class="fa-close" onclick="closeSideBar()"></i>
+                <ul>
+                    <a href="Home.html" class="header-bar">
+                        <li>Home</li>
+                    </a>
+                    <a href="Home.html" class="header-bar">
+                        <li>About</li>
+                    </a>
+                    <a href="Home.html" class="header-bar">
+                        <li>Services</li>
+                    </a>
+                    <a href="Home.html" class="header-bar">
+                        <li>Contact</li>
+                    </a>
+                </ul>
+            </div>
+            <i class="fa fa-bars" class="fa-close" onclick="showSideBar()"></i>
+        </nav>
+    </section>
+    <script>
+        var sideBar = document.getElementById("sideBar")
+
+        function closeSideBar() {
+            sideBar.style.right = "-250px";
+        }
+
+        function showSideBar() {
+            sideBar.style.right = "0";
+        }
+    </script>
+</body>
+
+</html>
